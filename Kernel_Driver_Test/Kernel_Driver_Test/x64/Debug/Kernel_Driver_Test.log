@@ -1,0 +1,20 @@
+﻿  Building 'Kernel_Driver_Test' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\Kernel_Driver_Test.inf
+  Stamping [Version] section with DriverVer=12/04/2024,23.31.27.929
+C:\Users\13984\Desktop\Study\Kernel Driver\Windows_Driver_Test\Kernel_Driver_Test\Kernel_Driver_Test\Kernel_Driver_Test.inf(5-5): warning 1324: [Version] section should specify PnpLockdown=1 to prevent external apps from modifying installed driver files.
+  Kernel_Driver_Test.vcxproj -> C:\Users\13984\Desktop\Study\Kernel Driver\Windows_Driver_Test\Kernel_Driver_Test\x64\Debug\Kernel_Driver_Test.sys
+  Driver is 'Universal'.
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\13984\Desktop\Study\Kernel Driver\Windows_Driver_Test\Kernel_Driver_Test\x64\Debug\Kernel_Driver_Test\kernel_driver_test.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\13984\Desktop\Study\Kernel Driver\Windows_Driver_Test\Kernel_Driver_Test\x64\Debug\Kernel_Driver_Test\kernel_driver_test.cat
+  
