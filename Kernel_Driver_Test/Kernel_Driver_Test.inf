@@ -7,7 +7,7 @@ Signature   = "$WINDOWS NT$"
 Class       = "System"
 ClassGuid   = "{4d36e97d-e325-11ce-bfc1-08002be10318}"
 Provider    = "DebugMan_W"
-DriverVer = 12/11/2024,22.13.9.900
+DriverVer   = "01/01/2024,1.0.0.0" ; Time and Version
 CatalogFile = "Kernel_Driver_Test.cat" ; CAT file
 PnpLockdown=1
 
@@ -25,9 +25,9 @@ Kernel_Driver_Test.sys = 1,,
 ;*****************************************
 
 [Manufacturer]
-%ManufacturerName% = Standard,NTamd64.10.0...16299 ; %13% support introduced in build 16299
+%ManufacturerName% = Standard,NT$ARCH$.10.0...16299 ; %13% support introduced in build 16299
 
-[Standard.NTamd64.10.0...16299]
+[Standard.NT$ARCH$.10.0...16299]
 %Kernel_Driver_Test.DeviceDesc% = Kernel_Driver_Test_Device, Root\Kernel_Driver_Test ; TODO: edit hw-id
 
 [Kernel_Driver_Test_Device.NT]
@@ -52,7 +52,7 @@ ServiceBinary  = %13%\Kernel_Driver_Test.sys
 KmdfService = Kernel_Driver_Test, Kernel_Driver_Test_wdfsect
 
 [Kernel_Driver_Test_wdfsect]
-KmdfLibraryVersion = 1.15
+KmdfLibraryVersion = $KMDFVERSION$
 
 [Strings]
 SPSVCINST_ASSOCSERVICE = 0x00000002
